@@ -1,0 +1,165 @@
+<html>
+<fieldset><title>Registration form</title>
+<head>
+<style>
+p.one
+{
+ border-style: solid;
+    border-color: blue;
+}
+</style>
+<script>
+ function formValidator()
+ {
+   var name = document.getElementById("F_Name").value;
+   var mid=document.getElementById("Middle").value;
+   var last=document.getElementById("Last").value;
+   var f_name=document.getElementById("father_name").value;
+   var m_name=document.getElementById("Mother_name").value;
+   if ((name!= "") && (mid!="") && (last!="") && (f_name!="") && (m_name!="")) //wanted to check for alphabets only.
+    {
+        alert("ok"); 
+     	 return true;        
+
+    }
+    else
+	{
+	alert("fill this field");
+    return false; //doesnt go to next.php
+
+	 }
+}
+</script>
+</head>
+<center>
+<h1><p class="one">Regirtration Form</p></h1></center><hr><fieldset>
+<h3><center>Basic Information</center></h3>
+<body style="background-color:lightgray"> 
+
+<form name="form" onsubmit="return formValidator()" >
+Name (First):<input type="text" id="F_Name" >
+Middle:<input type="text" id="Middle" >
+Last:<input type="text" id="Last"><br><br><br>
+
+Father's name:<input type="text" id="father_name">
+Mother's name:<input type="text" id="Mother_name"><br><br>
+
+<form >
+Date of birth (dd): <select name="Date of birth (dd): " >
+<option value="0">select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+
+(MM): <select name="MM" >
+<option value="0">select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+(YY): <select name="YY" >
+<option value="0">select</option>
+<option value="1992">1986</option>
+<option value="1992">1987</option>
+<option value="1992">1988</option>
+<option value="1992">1989</option>
+<option value="1992">1990</option>
+<option value="1992">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+                         
+</select><br><br>
+
+Gender:<input type="radio" name="sex" value="male" checked >male
+<input type="radio" name="sex" value="female" checked>female
+<br><br>
+
+Category: <select name="Category" required>
+<option value="select">select</option>
+<option value="General">General</option>
+<option value="ST">ST</option>
+<option value="SC">SC</option>
+<option value="OBC">OBC</option>
+
+</select></fieldset>
+<hr><fieldset>
+
+<h3><center><p class="two">Correspandance Address<p></center></h3>
+Address :<input type="text" name="Address :" >
+
+&nbsp;&nbsp;&nbsp; State :<select name="State :" >
+<option value="Select">Select</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Gujrat">Gujrat</option>
+<option value="UP">UP</option>
+<option value="MP">MP</option>
+</select><br><br>
+
+locality :<input type="text" name="locality :">
+Pin:<input type="text" name="Pin :">
+email ID:<input type="text" name="email ID:" ></fieldset>
+
+
+<hr><fieldset>
+<h3><center>Permenant Address</center></h3>
+Address :<input type="text" name="Address :">
+
+&nbsp;&nbsp;&nbsp; State :<select name="State :" >
+<option value="Select">Select</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Gujrat">Gujrat</option>
+<option value="UP">UP</option>
+<option value="MP">MP</option>
+</select><br><br>
+
+locality :<input type="text" name="locality :">
+Pin:<input type="text" name="Pin :">
+email ID:<input type="text" name="email ID:"></fieldset><br><br><br><br><br>
+
+
+<center>
+<input type="Submit" value="Submit" ></center>
+</form><</fieldset>>
+</body></html>
